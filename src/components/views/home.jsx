@@ -10,7 +10,7 @@ export default class Home extends Component {
   render() {
 
     return (
-      <div id="home" className="container">
+      <div id="home" className="container background">
         <h1 id="heading">ARE YOU HAPPY?</h1>
         <button className="button" type="button" onClick={() => browserHistory.push(`happy`)}>YES</button>
         <button className="button" type="button" onClick={() => browserHistory.push(`contact`)}>NO</button>

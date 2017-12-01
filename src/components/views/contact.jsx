@@ -1,11 +1,18 @@
 import React, { Component } from "react";
 
 export default class Contact extends Component {
-  render() {
-    return (
-      <div id="contact">
-        This is the contact me page.
-      </div>
-    );
-  }
+	// var Preload = React.createClass({
+	// 	getInitialState: function(){
+	// 		return {showResults: false};
+	// 	},
+	// 	onclick: function() {
+	// 		this.setState({showResults: true});
+	// })
+  	render() {
+    	return (
+      		<div id="contact">
+  				<div id='preloader'></div>
+      		</div>
+    	);
+  	}
 }

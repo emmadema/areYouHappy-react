@@ -1,29 +1,47 @@
+html{
+	background-image: url('https://thumbs.gfycat.com/RingedSpicyKodiakbear-max-1mb.gif');
+	background-size: cover;
+}
+
 #home {
-	color: gray;
+	color: #fff;
 	text-align: center;
+	
+	height: 500%;
+	margin-top: -250px;
+	width: 100%;
+}
 
-	#backgroundImage {
-		height: 100%;
-		width: 100%;
-		display: block;
-	}
+.background {
+		
+}
 
-	#heading {
-		margin-top: 20%; /*40% is better for ipad prob 50% for iphone*/
-		font-size: 64px;
-		font-family: 'Glegoo', serif;
-		letter-spacing: 20px;
-		font-weight: 400;
-		font-style: normal;
+#heading {
+	margin-top: 40%; /*40% is better for ipad prob 50% for iphone*/
+	font-size: 64px;
+	font-family: 'Glegoo', serif;
+	letter-spacing: 20px;
+	font-weight: 400;
+	font-style: normal;
+}
 
-	}
+.button {
+	padding: 15px 25px 15px 25px;
+	border-radius: 0;
+	margin: 15px;
+	font-size: 15px;
+	font-family: 'Open Sans', sans-serif;
+	display: inline-block;
+	color: #fff;
+	border: 3px solid #fff;
+	text-align: center;
+	outline: none;
+	text-decoration: none;
+	background-color: transparent;
+}
 
-	.button {
-		padding: 15px 25px 15px 25px;
-		border-radius: 0;
-		margin: 15px;
-		border: 3px solid;
-		font-size: 15px;
-		font-family: 'Open Sans', sans-serif;
-		}
+.button:hover, 
+.button:active {
+	background-color: #fff;
+	color: black;
 }
