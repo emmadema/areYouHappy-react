@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import StackGrid from 'react-stack-grid';
+import ReactPlayer from 'react-player';
 
 
 export default class Happy extends Component {
@@ -8,7 +9,8 @@ export default class Happy extends Component {
     return (
     	<StackGrid id="contact" className="container" columnWidth={160} gutterWidth={80} gutterHeight={20}>
       			<div className="article" key="key1">
-      				<img src="https://i.imgur.com/Huou7Gh.gif" height="200px" width="220px" className="image" />
+      				<ReactPlayer url="https://www.youtube.com/watch?v=Awf45u6zrP0" playing height='200px' width='200px' className='image'/>
+      				
       				<div className="middle">
       					<div className="text"><a href="https://www.youtube.com/watch?v=aXItOY0sLRY">Breath Deep</a></div>
       				</div>
