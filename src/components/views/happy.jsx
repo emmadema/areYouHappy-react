@@ -1,135 +1,57 @@
 import React, { Component } from "react";
-import StackGrid from 'react-stack-grid';
-import ReactPlayer from 'react-player';
+import 'aframe';
+import 'aframe-animation-component';
+import 'aframe-particle-system-component';
+import 'babel-polyfill';
+import {Entity, Scene} from 'aframe-react';
+import ReactDOM from 'react-dom';
+// import StackGrid from 'react-stack-grid';
+// import ReactPlayer from 'react-player';
 
 
 export default class Happy extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {color: 'red'};
+  }
 
+  changeColor() {
+    const colors = ['red', 'orange', 'yellow', 'green', 'blue'];
+    this.setState({
+      color: colors[Math.floor(Math.random() * colors.length)]
+    });
+  }
   render() {
     return (
-    	<StackGrid id="contact" className="container" columnWidth={160} gutterWidth={80} gutterHeight={20}>
-      			<div className="article" key="key1">
-      				<ReactPlayer url="https://www.youtube.com/watch?v=Awf45u6zrP0" playing height='200px' width='200px' className='image'/>
-      				
-      				<div className="middle">
-      					<div className="text"><a href="https://www.youtube.com/watch?v=aXItOY0sLRY">Breath Deep</a></div>
-      				</div>
-      			</div>
-			    <div className="article" key="key2">
-			    	<img src="https://i.imgur.com/YOtytAUb.jpg" height="200px" width="220px" className="image" />
-			    	<div className="middle">
-      					<div className="text"><a href="https://themighty.com/2017/10/funny-memes-anxiety-depression/">Laugh A Litte</a></div>
-      				</div>
-			    </div>
-			    <div className="article" key="key3">
-			    	<img src="http://www.metrocrisisservices.org/library/images/SPL_logo_220x240_ENG.png" height="200px" width="220px" className="image" />
-			    	<div className="middle">
-      					<div className="text"><a href="https://suicidepreventionlifeline.org/">Need to talk?</a></div>
-      				</div>
-			    </div>
-			    <div className="article" key="key4">
-			    	<img src="https://i.imgur.com/Huou7Gh.gif" height="200px" width="220px" className="image" />
-			    	<div className="middle">
-      					<div className="text"><a href="">Look at these cuties</a></div>
-      				</div>
-			    </div>
-			    <div className="article" key="key5">
-			    	<img src="https://i.imgur.com/Huou7Gh.gif" height="200px" width="220px" className="image" />
-			   		<div className="middle">
-      					<div className="text"><a href="">Go</a></div>
-      				</div>
-			    </div>
-			    <div className="article" key="key6">
-			    	<img src="https://i.imgur.com/Huou7Gh.gif" height="200px" width="220px" className="image" />
-			    	<div className="middle">
-      					<div className="text"><a href="">Go</a></div>
-      				</div>
-			    </div>
-			    <div className="article" key="key7">
-      				<img src="https://i.imgur.com/Huou7Gh.gif" height="200px" width="220px" className="image" />
-      				<div className="middle">
-      					<div className="text"><a href="">Go</a></div>
-      				</div>
-      			</div>
-			    <div className="article" key="key8">
-			    	<img src="https://i.imgur.com/YOtytAUb.jpg" height="200px" width="220px" className="image" />
-			    	<div className="middle">
-      					<div className="text"><a href="">Go</a></div>
-      				</div>
-			    </div>
-			    <div className="article" key="key9">
-			    	<img src="https://i.imgur.com/Huou7Gh.gif" height="200px" width="220px" className="image" />
-			    	<div className="middle">
-      					<div className="text"><a href="">Go</a></div>
-      				</div>
-			    </div>
-			    <div className="article" key="key10">
-			    	<img src="https://i.imgur.com/Huou7Gh.gif" height="200px" width="220px" className="image" />
-			    	<div className="middle">
-      					<div className="text"><a href="">Go</a></div>
-      				</div>
-			    </div>
-			    <div className="article" key="key11">
-			    	<img src="https://i.imgur.com/Huou7Gh.gif" height="200px" width="220px" className="image" />
-			   		<div className="middle">
-      					<div className="text"><a href="">Go</a></div>
-      				</div>
-			    </div>
-			    <div className="article" key="key12">
-			    	<img src="https://i.imgur.com/Huou7Gh.gif" height="200px" width="220px" className="image" />
-			    	<div className="middle">
-      					<div className="text"><a href="">Go</a></div>
-      				</div>
-			    </div>	
-			    <div className="article" key="key13">
-			    	<img src="https://i.imgur.com/Huou7Gh.gif" height="200px" width="220px" className="image" />
-			    	<div className="middle">
-      					<div className="text"><a href="">Go</a></div>
-      				</div>
-			    </div>
-			    <div className="article" key="key14">
-			    	<img src="https://i.imgur.com/Huou7Gh.gif" height="200px" width="220px" className="image" />
-			   		<div className="middle">
-      					<div className="text"><a href="">Go</a></div>
-      				</div>
-			    </div>
-			    <div className="article" key="key15">
-			    	<img src="https://i.imgur.com/Huou7Gh.gif" height="200px" width="220px" className="image" />
-			    	<div className="middle">
-      					<div className="text"><a href="">Go</a></div>
-      				</div>
-			    </div>	
-			    <div className="article" key="key16">
-			    		<img src="https://i.imgur.com/Huou7Gh.gif" height="200px" width="220px" className="image" />
-			   		<div className="middle">
-      					<div className="text"><a href="">Go</a></div>
-      				</div>
-			    </div>
-			    <div className="article" key="key17">
-			    	<img src="https://i.imgur.com/Huou7Gh.gif" height="200px" width="220px" className="image" />
-			    	<div className="middle">
-      					<div className="text"><a href="">Go</a></div>
-      				</div>
-			    </div>	
-			    <div className="article" key="key18">
-			    	<img src="https://i.imgur.com/Huou7Gh.gif" height="200px" width="220px" className="image" />
-			    	<div className="middle">
-      					<div className="text"><a href="">Go</a></div>
-      				</div>
-			    </div>
-			    <div className="article" key="key19">
-			    	<img src="https://i.imgur.com/Huou7Gh.gif" height="200px" width="220px" className="image" />
-			   		<div className="middle">
-      					<div className="text"><a href="">Go</a></div>
-      				</div>
-			    </div>
-			    <div className="article" key="key20">
-			    	<img src="https://i.imgur.com/Huou7Gh.gif" height="200px" width="220px" className="image" />
-			    	<div className="middle">
-      					<div className="text"><a href="">Go</a></div>
-      				</div>
-			    </div>	       
-		    </StackGrid>
+    	<Scene>
+        <a-assets>
+          <img id="groundTexture" src="https://cdn.aframe.io/a-painter/images/floor.jpg"/>
+          <img id="skyTexture" src="https://cdn.aframe.io/a-painter/images/sky.jpg"/>
+        </a-assets>
+
+        <Entity primitive="a-plane" src="#groundTexture" rotation="-90 0 0" height="100" width="100"/>
+        <Entity primitive="a-light" type="ambient" color="#445451"/>
+        <Entity primitive="a-light" type="point" intensity="2" position="2 4 4"/>
+        <Entity primitive="a-sky" height="2048" radius="30" src="#skyTexture" theta-length="90" width="2048"/>
+        <Entity particle-system={{preset: 'snow', particleCount: 2000}}/>
+        <Entity text={{value: 'Hello, A-Frame React!', align: 'center'}} position={{x: 0, y: 2, z: -1}}/>
+
+        <Entity id="box"
+          geometry={{primitive: 'box'}}
+          material={{color: this.state.color, opacity: 0.6}}
+          animation__rotate={{property: 'rotation', dur: 2000, loop: true, to: '360 360 360'}}
+          animation__scale={{property: 'scale', dir: 'alternate', dur: 100, loop: true, to: '1.1 1.1 1.1'}}
+          position={{x: 0, y: 1, z: -3}}
+          events={{click: this.changeColor.bind(this)}}>
+          <Entity animation__scale={{property: 'scale', dir: 'alternate', dur: 100, loop: true, to: '2 2 2'}}
+                  geometry={{primitive: 'box', depth: 0.2, height: 0.2, width: 0.2}}
+                  material={{color: '#24CAFF'}}/>
+        </Entity>
+
+        <Entity primitive="a-camera">
+          <Entity primitive="a-cursor" animation__click={{property: 'scale', startEvents: 'click', from: '0.1 0.1 0.1', to: '1 1 1', dur: 150}}/>
+        </Entity>
+      </Scene>
  
     );
   }
