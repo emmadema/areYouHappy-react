@@ -33,7 +33,8 @@ export default class Contact extends Component {
 			    <div className="article" key="key5">
 			    	<img src="https://i.imgur.com/Huou7Gh.gif" height="200px" width="220px" className="image" />
 			   		<div className="middle">
-      					<div className="text"><a href="">Go</a></div>
+      					<div className="text"><a href="">
+      					test grid yo</a></div>
       				</div>
 			    </div>
 			    <div className="article" key="key6">
