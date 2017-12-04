@@ -17,6 +17,7 @@
     "@ngtools/webpack": "^1.2.4",
     "aframe": "^0.7.1",
     "aframe-animation-component": "^3.2.5",
+    "aframe-href-component": "^0.5.1",
     "aframe-particle-system-component": "^1.0.11",
     "aframe-react": "^4.3.0",
     "babel-core": "^6.22.1",
