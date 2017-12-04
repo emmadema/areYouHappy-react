@@ -33,11 +33,13 @@ export default class Happy extends Component {
     }
   render() {
     return (
-    	<Scene>
+    	<a-scene>
         //sets the texture for the ground and the sky
         <a-assets>
           <img id="groundTexture" src="https://cdn.aframe.io/a-painter/images/floor.jpg"/>
           <img id="skyTexture" src="https://cdn.aframe.io/a-painter/images/sky.jpg"/>
+          <img id="cuteDog" src="https://ucarecdn.com/0daaf573-d608-4ffb-9b50-1db1a8e12e56/"/>
+          <video id="video" autoplay loop="true" src="https://youtu.be/Awf45u6zrP0" webkit-playsinline/>
         </a-assets>
 
         //sets up the 3d environment
@@ -49,13 +51,8 @@ export default class Happy extends Component {
         <Entity text={{value: 'Take a Look Around!', align: 'center'}} position={{x: 0, y: 2, z: -1}}/>
 
         //box brings you to funny cat videos
-        <Entity id="box"
-          geometry={{primitive: 'box'}}
-          material={{color: this.state.color, opacity: 0.6}}
-          position={{x: 0, y: 1, z: -3}}
-          href= 'https://google.com'
-          events={{click: this.changeColor.bind(this)}}>
-        </Entity>
+       // 
+       <a-video src="#video" width="8" height="6" position="0 1 -10"/>
 
         //box brings you to the suicide help line
         <Entity id="box"
@@ -69,6 +66,7 @@ export default class Happy extends Component {
 
         //brings you tpo breathing exercises
 		    <Entity id="box"
+        src="#cuteDog"
           geometry={{primitive: 'box'}}
           material={{color: this.state.color, opacity: 0.6}}
           position={{x: 4, y: 5, z: -1}}
@@ -91,7 +89,7 @@ export default class Happy extends Component {
                   animation__click={{property: 'scale', startEvents: 'click', from: '0.1 0.1 0.1', to: '1 1 1', dur: 150}}
                   material="color:grey; shader: flat"/>
         </Entity>
-      </Scene>
+      </a-scene>
  
     );
   }
