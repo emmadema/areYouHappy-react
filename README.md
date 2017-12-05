@@ -3,12 +3,15 @@
 # Features
 
 ## Home Screen
+(./mainPage)
 The home screen brings you to a page asking you if you are happy or sad. You will receive a different experience depending on which one you pick.
 
 ## Yes Page 
+(./yesPage)
 Clicking yes on the home screen is meant to educate people about depression. It allows users to read articles and receive information about depression and how to help to help someone with depression.
 
-# No Page 
+## No Page 
+(./noPage)
 Clicking on no brings you to your own virtually world
 
 # Technologies Used
@@ -28,10 +31,11 @@ Used for node package management
 [WebPack](https://webpack.js.org/)
 Used for serving the app in the browser and compiling the SASS
 
-
 ## [Sketch](./areYouHappy.pdf)
 
 ## [Live Site](https://cryptic-citadel-91160.herokuapp.com/)
+
+## [Trello](https://trello.com/b/vrlgEtbm/are-you-happy)
 
 ## Get Started on a Local Server
 
@@ -41,7 +45,7 @@ Used for serving the app in the browser and compiling the SASS
 4. Go to localhost://5000
 
 ## Are You Happy 2.0
-There are a few features which are goals for implementation in the next version of Are You Happy?
+Goals for implementation in the next version of Are You Happy:
 1. Multiple virtual worlds
 2. Full VR capability 
 3. API to serve up articles and videos
