@@ -19,7 +19,7 @@ export default class Happy extends Component {
           <div className="article" key="key2">
             <img src="https://i.imgur.com/N9oOvUi.jpg" height="200px" width="220px" className="image" />
             <div className="middle">
-                <div className="text"><a href="https://www.huffingtonpost.com/entry/11-answers-to-how-can-i-help-someone-with-depression_us_5813c9ede4b08301d33e096f">Get Someone Help</a></div>
+                <div className="text"><a href="https://www.huffingtonpost.com/entry/11-answers-to-how-can-i-help-someone-with-depression_us_5813c9ede4b08301d33e096f">Learn to Help</a></div>
               </div>
           </div>
           <div className="article" key="key3">
