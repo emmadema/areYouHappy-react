@@ -46,6 +46,7 @@ Used for serving the app in the browser and compiling the SASS
 4. Go to localhost://5000
 
 ## Are You Happy 2.0
+
 Goals for implementation in the next version of Are You Happy:
 1. Multiple virtual worlds
 2. Full VR capability 

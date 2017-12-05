@@ -88,11 +88,18 @@ export default class Contact extends Component {
 
         //changes the box color on click
         //used entity instaed of a-box for more specific settings
+        //also adds a spinning animation
 		    <Entity id="box"
           geometry={{primitive: 'box'}}
           material={{color: this.state.color, opacity: 0.6}}
           position={{x: -4, y: 3, z: -1}}
           events={{click: this.changeColor.bind(this)}}>
+          <a-animation 
+            attribute="rotation"
+            fill="forwards"
+            dur="10000"
+            to="10 360 40"
+            repeat="indefinite"></a-animation>
         </Entity>
 
         //Allows the cursor to stay fixed to the screen and styles it
