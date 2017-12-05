@@ -2,36 +2,36 @@
 
 # Features
 
-## Hopme Screen
-The home screen brings you to a page asking you if you are happy or sad. You will recive a diffrent experince depsneding on whihc one you pick.
+## Home Screen
+The home screen brings you to a page asking you if you are happy or sad. You will receive a different experience depending on which one you pick.
 
 ## Yes Page 
-Clicking yes on the home screenis meant to educate people about depression. It allows users to read articles and recvie information about depression and how to help to help someone with depression.
+Clicking yes on the home screen is meant to educate people about depression. It allows users to read articles and receive information about depression and how to help to help someone with depression.
 
 # No Page 
 Clicking on no brings you to your own virtually world
 
 # Technologies Used
 
-[React JS]
+[React JS](https://reactjs.org/)
 Used to created and frame the front end
 
-[A-frame]
+[A-frame](https://aframe.io/)
 Used for all virtual reality aspects
 
-[SASS]
+[SASS](http://sass-lang.com/)
 Used for styling
 
-[npm]
+[npm](https://www.npmjs.com/)
 Used for node package management
 
-[WebPack]
-Used for serving the app in the browser and compling the SASS
+[WebPack](https://webpack.js.org/)
+Used for serving the app in the browser and compiling the SASS
 
 
-## [Sketch]=
+## [Sketch](./areYouHappy.pdf)
 
-## [Live Site]= 
+## [Live Site](https://cryptic-citadel-91160.herokuapp.com/)
 
 ## Get Started on a Local Server
 
@@ -41,16 +41,15 @@ Used for serving the app in the browser and compling the SASS
 4. Go to localhost://5000
 
 ## Are You Happy 2.0
-There are afew feautre which are golas for implenmention in the next vesrion of Are You Happy?
-1.
-2.
-3.
-4.
-5.
+There are a few features which are goals for implementation in the next version of Are You Happy?
+1. Multiple virtual worlds
+2. Full VR capability 
+3. API to serve up articles and videos
+4. Full image size capability on CSS grid
 
 ## Why I made this app
 
-I wanted a diffrent kind of app to help epople with depression. This app allows people to become imersed in an alternate world to help them battle their depression. It also educated people who do not have depression and gives them resurces to help their friends and fmaily.
+I wanted a different kind of app to help people with depression. This app allows people to become immersed in an alternate world to help them battle their depression. It also educated people who do not have depression and gives them resources to help their friends and family.
 
 1. What am I making? An app that helps people with depression and educated people about depression
 
