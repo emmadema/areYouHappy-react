@@ -12,7 +12,8 @@ Clicking yes on the home screen is meant to educate people about depression. It 
 
 ## No Page 
 ![No Page Screen Shot](./noPage.png)
-Clicking on no brings you to your own virtually world
+Clicking on no brings you to your own virtual world. Here you can interaxct with the elemnts to bring you to links and play videos. 
+(Best experinced with VR Glasses)
 
 # Technologies Used
 
