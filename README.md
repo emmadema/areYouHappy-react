@@ -12,9 +12,11 @@ How do I make it the best resource for them? Make it easy and fun to use. Make i
 
 # Features
 
-## Happy Page Educate people about depression. Have articles and info on how to speak to people with depression A chat function in which you can send uplifting messages to people in need (maybe have it appear on the depression page) Breathing exercise
+## Happy Page 
+Educate people about depression. Have articles and info on how to speak to people with depression A chat function in which you can send uplifting messages to people in need (maybe have it appear on the depression page) Breathing exercise
 
-# Sad Page Yoga poses of the day Breathing exercise Help line resources Inspirational quote a day A chat to get quick help A stories section when you can talk anonymously about struggles you have (kind of a virtual diary)
+# Sad Page 
+Yoga poses of the day Breathing exercise Help line resources Inspirational quote a day A chat to get quick help A stories section when you can talk anonymously about struggles you have (kind of a virtual diary)
 
 # Technologies Used
 
