@@ -6,7 +6,6 @@ import 'babel-polyfill';
 import 'aframe-href-component'
 import {Entity, Scene} from 'aframe-react';
 import ReactDOM from 'react-dom';
-import {browserHistory} from 'react-router'
 
 
 export default class Contact extends Component {
@@ -25,11 +24,6 @@ export default class Contact extends Component {
 
  
   }
-     goToSite() {
-
-    	browserHistory.replace();
-    }
-
   	render() {
     	return (
     		  	<a-scene>
@@ -37,8 +31,9 @@ export default class Contact extends Component {
         <a-assets>
           <img id="groundTexture" src="https://cdn.aframe.io/a-painter/images/floor.jpg"/>
           <img id="skyTexture" src="https://cdn.aframe.io/a-painter/images/sky.jpg"/>
-          <img id="cuteDog" src="https://ucarecdn.com/0daaf573-d608-4ffb-9b50-1db1a8e12e56/"/>
-          <video id="video" autoPlay loop="true" src=""/>
+          <img id="breathing" src="https://ucarecdn.com/24c8b81b-2c67-41b8-ab61-83cb9228d270/"/>
+          <img id="help" src="https://ucarecdn.com/bf4319bc-5390-4a14-8e13-ef31fde03ef0/"/>
+          <img id="laugh" src="https://ucarecdn.com/8f09c831-7a7d-41d8-bae4-9f8927c6d5e6/"/>
         </a-assets>
 
         //sets up the 3d environment
@@ -48,32 +43,39 @@ export default class Contact extends Component {
         <Entity primitive="a-sky" height="2048" radius="30" src="#skyTexture" theta-length="90" width="2048"/>
         <Entity particle-system={{preset: 'dust', particleCount: 2000}}/>
         <Entity text={{value: 'Take a Look Around!', align: 'center'}} position={{x: 0, y: 2, z: -1}}/>
+        <Entity text={{value: 'Use the circle to click on the shapes', align: 'center'}} position={{x: 1, y: 2, z: -1.5}}/>
 
-        //box brings you to funny cat videos
-       // 
-       <a-video src="#video" width="8" height="6" position="0 1 -10"/>
+        //on click goes to breathing exercises
+        <a-box 
+        width="1"
+        height="1"
+        depth="1"
+        position="1 0.5 -5" 
+        src="#breathing"
+        href="https://www.youtube.com/watch?v=u9Q8D6n-3qw">
+        </a-box>
 
-        //box brings you to the suicide help line
-        <Entity id="box"
-          geometry={{primitive: 'box'}}
-          material={{color: this.state.color, opacity: 0.6}}
-          position={{x: 5, y: 1, z: 1}}
-          href= 'https://google.com'
-          events={{click: this.changeColor.bind(this)}}>
+        //on click goes to help line
+         <a-box 
+        width="1"
+        height="1"
+        depth="1"
+        position="5 1 1" 
+        src="#help"
+        href="https://suicidepreventionlifeline.org/">
+        </a-box>
 
-        </Entity>
+        //on click goes to sail cat
+         <a-box 
+        width="1"
+        height="1"
+        depth="1"
+        position="4 5 -1" 
+        color="#laugh"
+        href="https://www.youtube.com/watch?v=Awf45u6zrP0">
+        </a-box>
 
-        //brings you tpo breathing exercises
-		    <Entity id="box"
-        src="#cuteDog"
-          geometry={{primitive: 'box'}}
-          material={{color: this.state.color, opacity: 0.6}}
-          position={{x: 4, y: 5, z: -1}}
-          events={{click: this.changeColor.bind(this)}}>
-
-        </Entity>
-
-        //brings you to help gorups in you area
+        //changes the box color on click
 		    <Entity id="box"
           geometry={{primitive: 'box'}}
           material={{color: this.state.color, opacity: 0.6}}
