@@ -3,15 +3,15 @@
 # Features
 
 ## Home Screen
-![Main Page Screen Shot](./mainPage)
+![Main Page Screen Shot](./mainPage.png)
 The home screen brings you to a page asking you if you are happy or sad. You will receive a different experience depending on which one you pick.
 
 ## Yes Page 
-![Yes Page Screen Shot](./yesPage)
+![Yes Page Screen Shot](./yesPage.png)
 Clicking yes on the home screen is meant to educate people about depression. It allows users to read articles and receive information about depression and how to help to help someone with depression.
 
 ## No Page 
-![No Page Screen Shot](./noPage)
+![No Page Screen Shot](./noPage.png)
 Clicking on no brings you to your own virtually world
 
 # Technologies Used
