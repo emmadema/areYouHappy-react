@@ -9,7 +9,7 @@ import ReactDOM from 'react-dom';
 
 
 export default class Contact extends Component {
-  //set the inital color fo all the boxes to be blue
+  //set the inital color for all the boxes to be blue
   constructor(props) {
     super(props);
     this.state = {color: 'blue'};
@@ -26,14 +26,16 @@ export default class Contact extends Component {
   }
   	render() {
     	return (
-    		  	<a-scene>
-        //sets the texture for the ground and the sky
+        //satrats the scene
+    	<a-scene>
+        //organizes all thre assets to be used in the doc
         <a-assets>
           <img id="groundTexture" src="https://cdn.aframe.io/a-painter/images/floor.jpg"/>
           <img id="skyTexture" src="https://cdn.aframe.io/a-painter/images/sky.jpg"/>
           <img id="breathing" src="https://ucarecdn.com/24c8b81b-2c67-41b8-ab61-83cb9228d270/"/>
           <img id="help" src="https://ucarecdn.com/bf4319bc-5390-4a14-8e13-ef31fde03ef0/"/>
           <img id="laugh" src="https://ucarecdn.com/8f09c831-7a7d-41d8-bae4-9f8927c6d5e6/"/>
+          <video id="play" autoPlay src="https://ucarecdn.com/9c514187-4f76-4c18-b555-f4bd563ae588/" />
         </a-assets>
 
         //sets up the 3d environment
@@ -56,7 +58,7 @@ export default class Contact extends Component {
         </a-box>
 
         //on click goes to help line
-         <a-box 
+        <a-box 
         width="1"
         height="1"
         depth="1"
@@ -75,7 +77,17 @@ export default class Contact extends Component {
         href="https://www.youtube.com/watch?v=Awf45u6zrP0">
         </a-box>
 
+        /*add a video screen*/
+        <a-video
+        src="#play"
+        width="8"
+        height="5"
+        position="0 3 8"
+        >
+        </a-video>
+
         //changes the box color on click
+        //used entity instaed of a-box for more specific settings
 		    <Entity id="box"
           geometry={{primitive: 'box'}}
           material={{color: this.state.color, opacity: 0.6}}
@@ -83,7 +95,7 @@ export default class Contact extends Component {
           events={{click: this.changeColor.bind(this)}}>
         </Entity>
 
-        //Allows the cursor to stay fixed to the screen and makes it larger 
+        //Allows the cursor to stay fixed to the screen and styles it
         <Entity primitive="a-camera">
           <Entity primitive="a-cursor" 
                   geometry="primitive: ring; radiusInner: 0.04; radiusOuter: 0.06"
