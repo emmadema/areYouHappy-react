@@ -1,17 +1,19 @@
+/*sets a universal backgorund for all pages*/
 html{
 	background-image: url('https://thumbs.gfycat.com/RingedSpicyKodiakbear-max-1mb.gif');
 	background-size: cover;
 }
 
+/*overall home page styling*/
 #home {
 	color: #fff;
 	text-align: center;
-	
 	height: 500%;
 	margin-top: -250px;
 	width: 100%;
 }
 
+/*styles the heading on the home page*/
 #heading {
 	margin-top: 40%; /*40% is better for ipad prob 50% for iphone*/
 	font-size: 64px;
@@ -21,6 +23,7 @@ html{
 	font-style: normal;
 }
 
+/*home page button styles*/
 .button {
 	padding: 15px 25px 15px 25px;
 	border-radius: 0;
@@ -35,6 +38,9 @@ html{
 	text-decoration: none;
 	background-color: transparent;
 }
+
+/*hover function for images
+creates a button to go to links*/
 
 .button:hover, 
 .button:active {

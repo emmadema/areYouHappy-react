@@ -1,3 +1,5 @@
+//The server files is meant to serve up the webpack file
+
 var path = require('path');
 var bodyParser = require('body-parser');
 var express = require('express');
@@ -29,5 +31,5 @@ app.listen(process.env.PORT || 5000, function(err) {
     return;
   }
 
-  console.log('Listening at http://localhost:5000');
+  console.log('server working');
 });

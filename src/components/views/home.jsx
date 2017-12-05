@@ -1,3 +1,6 @@
+//main page styling
+//adds routes to the buttons to push info into browser
+
 import React, { Component } from "react";
 import { browserHistory } from 'react-router';
 

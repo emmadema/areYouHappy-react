@@ -1,12 +1,18 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <!--linking stylesheet after webpack-->
     <link rel="stylesheet" type="text/css" href="/public/app.css" />
+
+    <!--adding fonts-->
     <link href="https://fonts.googleapis.com/css?family=Glegoo|Open+Sans" rel="stylesheet">
+    <!--allows a frame to be used on a phone-->
     <meta name="apple-mobile-web-app-capable"/>
   </head>
   <body>
+    <!--Starts the scene contianer for a-frame-->
     <div id="app"> <div id="sceneContainer" style="height: 100%; width: 100%"></div></div>
+    <!--Allows the creation of a budle JS for webpack-->
     <script type="text/javascript" src="/public/bundle.js" charset="utf-8">
     </script>
   </body>

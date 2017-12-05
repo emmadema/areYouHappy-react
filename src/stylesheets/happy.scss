@@ -1,3 +1,52 @@
-#happy {
-	color: green;
+/*SCSS for the happy page*/
+
+/**/
+#contact {
+	color: #fff;
+	margin-top: 50px;
+}
+
+/*styling for all images on the page*/
+.image {
+  opacity: 1;
+  transition: .5s ease;
+}
+
+/*styling for the hover function*/
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+/*hover function*/
+.article:hover .image {
+  opacity: 0.3;
+}
+
+.article:hover .middle {
+  opacity: 1;
+}
+
+/*text for the hover function button*/
+.text {
+  background-color: gray;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+  border-radius: 5px;
+  margin-left: 60px;
+  text-align: center;
+}
+
+/*hover function link- makes it invisible*/
+a {
+	text-decoration: none;
+	color: white;
+	font-family: 'Open Sans', sans-serif;
+	text-align: center;
 }
