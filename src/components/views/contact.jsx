@@ -78,7 +78,7 @@ export default class Contact extends Component {
           width="1"
           height="1"
           depth="1"
-          position="5 1 1" 
+          position="-8 3 6" 
           src="#help"
           href="https://suicidepreventionlifeline.org/">
           <a-animation
@@ -89,7 +89,6 @@ export default class Contact extends Component {
             direction="alternate-reverse"
             easing="ease-in-out"
             repeat="indefinite"
-
           ></a-animation>
 
         </a-box>
@@ -109,7 +108,7 @@ export default class Contact extends Component {
         src="#play"
         width="8"
         height="5"
-        position="-2 3 8"
+        position="4 3 6"
         >
         </a-video>
 
