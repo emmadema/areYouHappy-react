@@ -56,12 +56,9 @@ export default class Contact extends Component {
           <a-animation 
             attribute="position"
             dur="10000"
-            to="5 10 -6"
+            to="5 360 -6"
             repeat="indefinite"></a-animation>
         </Entity>
-
-    
-
 
         //on click goes to breathing exercises
         <a-box 
