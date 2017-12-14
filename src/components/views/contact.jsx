@@ -31,8 +31,7 @@ export default class Contact extends Component {
         //organizes all thre assets to be used in the doc
         <a-assets>
           <audio id="click-sound" src="audio/click.ogg"></audio>
-          
-          <img id="city" src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/city.jpg"/>
+          <img id="sky" src="https://ucarecdn.com/ede5311d-ff9b-4cac-91af-afb991c71639/"/>
           <img id="breathing" src="https://ucarecdn.com/24c8b81b-2c67-41b8-ab61-83cb9228d270/"/>
           <img id="help" src="https://ucarecdn.com/bf4319bc-5390-4a14-8e13-ef31fde03ef0/"/>
           <img id="laugh" src="https://ucarecdn.com/8f09c831-7a7d-41d8-bae4-9f8927c6d5e6/"/>
@@ -46,7 +45,15 @@ export default class Contact extends Component {
         <Entity primitive="a-sky" height="2048" radius="30" src="#skyTexture" theta-length="90" width="2048"/>        <Entity text={{value: 'Take a Look Around!', align: 'center'}} position={{x: 0, y: 2, z: -1}}/>
         <Entity text={{value: 'Use the circle to click on the shapes', align: 'center'}} position={{x: 1, y: 2, z: -1.5}}/>
 
-        <a-sky id="image-360" radius="12" src="#city"></a-sky>
+        //sets up the 360 city image
+        <a-sky id="image-360" radius="12" src="#sky"></a-sky>
+
+        <a-sphere
+        position="4 10 -7"
+        raduis="1.25" 
+        color="#EF2D5E"
+        >
+        </a-sphere>
 
 
         //on click goes to breathing exercises
@@ -84,7 +91,7 @@ export default class Contact extends Component {
         src="#play"
         width="8"
         height="5"
-        position="0 3 8"
+        position="-2 3 8"
         >
         </a-video>
 
