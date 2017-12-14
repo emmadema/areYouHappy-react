@@ -30,8 +30,9 @@ export default class Contact extends Component {
     	<a-scene>
         //organizes all thre assets to be used in the doc
         <a-assets>
-          <img id="groundTexture" src="https://cdn.aframe.io/a-painter/images/floor.jpg"/>
-          <img id="skyTexture" src="https://cdn.aframe.io/a-painter/images/sky.jpg"/>
+          <audio id="click-sound" src="audio/click.ogg"></audio>
+          
+          <img id="city" src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/city.jpg"/>
           <img id="breathing" src="https://ucarecdn.com/24c8b81b-2c67-41b8-ab61-83cb9228d270/"/>
           <img id="help" src="https://ucarecdn.com/bf4319bc-5390-4a14-8e13-ef31fde03ef0/"/>
           <img id="laugh" src="https://ucarecdn.com/8f09c831-7a7d-41d8-bae4-9f8927c6d5e6/"/>
@@ -39,13 +40,14 @@ export default class Contact extends Component {
         </a-assets>
 
         //sets up the 3d environment
-        <Entity primitive="a-plane" src="#groundTexture" rotation="-90 0 0" height="100" width="100"/>
+ 
         <Entity primitive="a-light" type="ambient" color="#445451"/>
         <Entity primitive="a-light" type="point" intensity="2" position="2 4 4"/>
-        <Entity primitive="a-sky" height="2048" radius="30" src="#skyTexture" theta-length="90" width="2048"/>
-        <Entity particle-system={{preset: 'dust', particleCount: 2000}}/>
-        <Entity text={{value: 'Take a Look Around!', align: 'center'}} position={{x: 0, y: 2, z: -1}}/>
+        <Entity primitive="a-sky" height="2048" radius="30" src="#skyTexture" theta-length="90" width="2048"/>        <Entity text={{value: 'Take a Look Around!', align: 'center'}} position={{x: 0, y: 2, z: -1}}/>
         <Entity text={{value: 'Use the circle to click on the shapes', align: 'center'}} position={{x: 1, y: 2, z: -1.5}}/>
+
+        <a-sky id="image-360" radius="12" src="#city"></a-sky>
+
 
         //on click goes to breathing exercises
         <a-box 
