@@ -48,12 +48,19 @@ export default class Contact extends Component {
         //sets up the 360 city image
         <a-sky id="image-360" radius="12" src="#sky"></a-sky>
 
-        <a-sphere
-        position="4 10 -7"
-        raduis="1.25" 
-        color="#EF2D5E"
-        >
-        </a-sphere>
+        <Entity id="sphere"
+          geometry={{primitive: 'sphere'}}
+          material={{color: this.state.color, opacity: 0.6}}
+          position={{x: 4, y: 10, z: -6}}
+          events={{click: this.changeColor.bind(this)}}>
+          <a-animation 
+            attribute="position"
+            dur="10000"
+            to="5 10 -6"
+            repeat="indefinite"></a-animation>
+        </Entity>
+
+    
 
 
         //on click goes to breathing exercises
@@ -68,12 +75,23 @@ export default class Contact extends Component {
 
         //on click goes to help line
         <a-box 
-        width="1"
-        height="1"
-        depth="1"
-        position="5 1 1" 
-        src="#help"
-        href="https://suicidepreventionlifeline.org/">
+          width="1"
+          height="1"
+          depth="1"
+          position="5 1 1" 
+          src="#help"
+          href="https://suicidepreventionlifeline.org/">
+          <a-animation
+            attribute="scale"
+            dur="5000"
+            from="1 1 1"
+            to=" 2 2 2"
+            direction="alternate-reverse"
+            easing="ease-in-out"
+            repeat="indefinite"
+
+          ></a-animation>
+
         </a-box>
 
         //on click goes to sail cat
